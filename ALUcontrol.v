@@ -1,17 +1,33 @@
 
-module ALUControl_Block(output reg[1:0] ALUControl,output reg JRControl, input [1:0] ALUOp,input [5:0] Function);
+module ALUControl_Block(
+	output reg[2:0] ALUControl,output reg JRControl,
+ 	input [1:0] ALUOp,input [5:0] Function);
 
-wire [7:0] ALUControlIn;
+wire [6:0] ALUControlIn;
 assign test = {ALUOp,Function};
 always @(test)
 casex (test)
- 8'b11xxxxxx: begin ALUControl=2'b01; JRControl=1'b0; end
- 8'b00xxxxxx: begin ALUControl=2'b00; JRControl=1'b0; end
- 8'b01xxxxxx: begin ALUControl=2'b10; JRControl=1'b0;end 
- 8'b10100000: begin ALUControl=2'b00; JRControl=1'b0; end
- 8'b10100010: begin ALUControl=2'b10; JRControl=1'b0; end
- 8'b10101010: begin ALUControl=2'b11; JRControl=1'b0; end
- 8'b10001000: begin JRControl=1'b1; ALUControl=2'b00; end
- default: begin ALUControl=2'b00;JRControl=1'b0; end
+ 7'b11xxxxxx: begin ALUControl=3'b000; JRControl=1'b0; end //addi,lw,sw
+ 7'b01xxxxxx: begin ALUControl=3'b001; JRControl=1'b0; end //beq
+ 7'b00000000: begin ALUControl=3'b000; JRControl=1'b0; end //add
+ 7'b00000001: begin ALUControl=3'b001; JRControl=1'b0; end //sub
+ 7'b00000010: begin ALUControl=3'b010; JRControl=1'b0; end //and
+ 7'b00000011: begin ALUControl=3'b011; JRControl=1'b0; end //or
+ 7'b00000100: begin ALUControl=3'b100; JRControl=1'b0; end //slt
+ 7'b00000100: begin ALUControl=3'b100; JRControl=1'b0; end //slti
+ 8'b00001000: begin ALUControl=3'b000; JRControl=1'b1; end //jr
+ default: 	  begin ALUControl=3'b000; JRControl=1'b0; end 
  endcase
 endmodule
+
+
+/*
+		3'b000: result = in1+in2;
+		3'b001: result = in1-in2 ;
+		3'b010: result = in1&in2;
+		3'b011: result = in1|in2;
+		3'b100: result = in1<<shamt;
+		3'b101: result = in1>>shamt;
+		3'b110: result = in1>>>shamt;
+		8'b10001000: begin JRControl=1'b1; ALUControl=2'b00; end
+*/

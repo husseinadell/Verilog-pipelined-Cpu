@@ -154,3 +154,17 @@ begin
 endcase
 
 endmodule
+
+module Program_Counter (clk, reset, PC_in, PC_out);
+     input clk, reset;
+     input [7:0] PC_in;
+     output [7:0] PC_out;
+     reg [7:0] PC_out;
+     always @ (posedge clk or posedge reset)
+     begin
+          if(reset==1'b1)
+               PC_out<=0;
+          else
+               PC_out<=PC_in;
+     end
+endmodule 
