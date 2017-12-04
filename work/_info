@@ -1,0 +1,183 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu
+vCompareAddress
+Z1 !s110 1512411622
+!i10b 1
+!s100 :7WBNQdnKMA=9Ei<^;NzT3
+IKDIQblNM]@O3?j4J[I7H;0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1512411616
+Z4 8F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v
+Z5 FF:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v
+L0 58
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1512411621.000000
+Z8 !s107 F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v|
+Z9 !s90 -reportprogress|300|-work|work|F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v|
+!s101 -O0
+!i113 1
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@compare@address
+vDiscard_Instr
+Z11 !s110 1512421940
+!i10b 1
+!s100 0<Og=diJL4iS7jfYgKTRQ2
+Ia[o6Pb6CKA_<@fI58JQT=0
+R2
+R0
+Z12 w1512421645
+Z13 8F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/flushControl.v
+Z14 FF:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/flushControl.v
+L0 27
+R6
+r1
+!s85 0
+31
+Z15 !s108 1512421940.000000
+Z16 !s107 F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/flushControl.v|
+Z17 !s90 -reportprogress|300|-work|work|F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/flushControl.v|
+!s101 -O0
+!i113 1
+R10
+n@discard_@instr
+vflushBlock
+R11
+!i10b 1
+!s100 <k;7V>kCgkW]c^dKMhUbk2
+I]1IDoX@dUo5loKA:Xe@cA0
+R2
+R0
+R12
+R13
+R14
+L0 3
+R6
+r1
+!s85 0
+31
+R15
+R16
+R17
+!s101 -O0
+!i113 1
+R10
+nflush@block
+vForwardUnit
+R1
+!i10b 1
+!s100 E68ZL_BF1d8<==jLl6CbP1
+IF44clZiH[SDEhCM0^QL_C1
+R2
+R0
+R3
+R4
+R5
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@forward@unit
+vfwtb
+R1
+!i10b 1
+!s100 PGo[`DSPKhNz7W<ZEl:`92
+IboT^QBU=:i_:RIX4o4XG43
+R2
+R0
+R3
+R4
+R5
+L0 73
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vmux32bits
+!s110 1512425016
+!i10b 1
+!s100 7<WU@4iAVk1bCZkD2[eS>3
+I>:VSQPeEeiAcCcFaW1LLP1
+R2
+R0
+w1512424979
+8F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/writeBackForward.v
+FF:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/writeBackForward.v
+L0 26
+R6
+r1
+!s85 0
+31
+!s108 1512425016.000000
+!s107 F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/writeBackForward.v|
+!s90 -reportprogress|300|-work|work|F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/writeBackForward.v|
+!s101 -O0
+!i113 1
+R10
+vmux3x32to32
+!s110 1512414336
+!i10b 1
+!s100 @dhQT?8LnGz30BB4XN2b>0
+Il7ZLGjakAl>nVjhmHH`FO3
+R2
+R0
+w1512414329
+8F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v
+FF:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1512414336.000000
+!s107 F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v|
+!s90 -reportprogress|300|-work|work|F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v|
+!s101 -O0
+!i113 1
+R10
+vStallControl
+!s110 1512420519
+!i10b 1
+!s100 TK1lNdHBUkM[zW=oWlYg52
+IeXNiA49hi:ffKOELGSiET0
+R2
+R0
+w1512420490
+8F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/stallControl.v
+FF:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/stallControl.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1512420519.000000
+!s107 F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/stallControl.v|
+!s90 -reportprogress|300|-work|work|F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/stallControl.v|
+!s101 -O0
+!i113 1
+R10
+n@stall@control

@@ -94,8 +94,8 @@ begin
 $monitor( $time,,"%b %b %b %b %b %b %b %b",FA,FB,memen,wben,mem,wb,rs,rt);
 mem=5'b00110;
 wb=5'b00110;
-rs=5'b00111;
-rt=5'b00111;
+rs=5'b00110;
+rt=5'b00110;
 memen=1;
 wben=1;
 #10

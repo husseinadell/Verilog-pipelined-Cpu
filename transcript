@@ -1,0 +1,185 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# OpenFile {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+vlib work
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:42:34 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v 
+# -- Compiling module ForwardUnit
+# -- Compiling module CompareAddress
+# 
+# Top level modules:
+# 	ForwardUnit
+# End time: 19:42:34 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 19:42:40 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v 
+# -- Compiling module ForwardUnit
+# -- Compiling module CompareAddress
+# 
+# Top level modules:
+# 	ForwardUnit
+# End time: 19:42:40 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 20:16:39 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v 
+# -- Compiling module ForwardUnit
+# -- Compiling module CompareAddress
+# ** Error: (vlog-13069) F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v(74): near "reg": syntax error, unexpected reg, expecting import or ';' or '#' or '('.
+# 
+# End time: 20:16:39 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 20:17:15 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v 
+# -- Compiling module ForwardUnit
+# -- Compiling module CompareAddress
+# -- Compiling module fwtb
+# ** Error: F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v(92): (vlog-13161) unexpected '$monitor'
+# 
+# ** Error: (vlog-13069) F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v(93): near "=": syntax error, unexpected '='.
+# 
+# ** Error: F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v(93): (vlog-13205) Syntax error found in the scope following 'mem'. Is there a missing '::'?
+# 
+# End time: 20:17:15 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 20:17:16 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v 
+# -- Compiling module ForwardUnit
+# -- Compiling module CompareAddress
+# -- Compiling module fwtb
+# ** Error: F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v(92): (vlog-13161) unexpected '$monitor'
+# 
+# ** Error: (vlog-13069) F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v(93): near "=": syntax error, unexpected '='.
+# 
+# ** Error: F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v(93): (vlog-13205) Syntax error found in the scope following 'mem'. Is there a missing '::'?
+# 
+# End time: 20:17:16 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 20:18:15 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v 
+# -- Compiling module ForwardUnit
+# -- Compiling module CompareAddress
+# -- Compiling module fwtb
+# 
+# Top level modules:
+# 	fwtb
+# End time: 20:18:15 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.fwtb
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui F:\3RD computer\Verilog\Projects\MIPS\Verilog-pipelined-Cpu\ForwardUnit.v 
+# Start time: 20:18:28 on Dec 04,2017
+# Loading work.fwtb
+# Loading work.ForwardUnit
+# Loading work.CompareAddress
+run
+#                    0 10 10 1 1 00110 00110 00110 00110
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 20:19:44 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v 
+# -- Compiling module ForwardUnit
+# -- Compiling module CompareAddress
+# -- Compiling module fwtb
+# 
+# Top level modules:
+# 	fwtb
+# End time: 20:19:44 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.fwtb
+# vsim 
+# Start time: 20:19:56 on Dec 04,2017
+# Loading work.fwtb
+# Loading work.ForwardUnit
+# Loading work.CompareAddress
+run
+#                    0 10 10 1 1 00110 00110 00110 00110
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 20:20:21 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/ForwardUnit.v 
+# -- Compiling module ForwardUnit
+# -- Compiling module CompareAddress
+# -- Compiling module fwtb
+# 
+# Top level modules:
+# 	fwtb
+# End time: 20:20:22 on Dec 04,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -gui work.fwtb
+# vsim 
+# Start time: 20:20:30 on Dec 04,2017
+# Loading work.fwtb
+# Loading work.ForwardUnit
+# Loading work.CompareAddress
+run
+#                    0 00 00 1 1 00110 00110 00111 00111
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 21:04:57 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v 
+# -- Compiling module mux3x32to32
+# ** Error: (vlog-13069) F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v(10): near "=": syntax error, unexpected '=', expecting ++ or --.
+# 
+# End time: 21:04:57 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 21:05:36 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/mux3x32to32.v 
+# -- Compiling module mux3x32to32
+# 
+# Top level modules:
+# 	mux3x32to32
+# End time: 21:05:37 on Dec 04,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/stallControl.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 22:48:39 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/stallControl.v 
+# -- Compiling module StallControl
+# 
+# Top level modules:
+# 	StallControl
+# End time: 22:48:39 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/flushControl.v}
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 23:12:20 on Dec 04,2017
+# vlog -reportprogress 300 -work work F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/flushControl.v 
+# -- Compiling module flushBlock
+# -- Compiling module Discard_Instr
+# 
+# Top level modules:
+# 	flushBlock
+# 	Discard_Instr
+# End time: 23:12:20 on Dec 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {F:/3RD computer/Verilog/Projects/MIPS/Verilog-pipelined-Cpu/writeBackForward.v}
