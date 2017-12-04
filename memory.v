@@ -19,11 +19,47 @@
 	//
 	//////////////////////////////////////////////////////////////////////////////////
 	module data_memory (
-	input wire [31:0] ramAddress,          // Memory Address
-	input wire [31:0] writeData,    // Memory Address Contents
-	input wire memWrite, memRead,
+	input wire [31:0] addr,          // Memory Address
+	input wire [31:0] write_data,    // Memory Address Contents
+	input wire memwrite, memread,
 	input wire clk,                  // All synchronous elements, including memories, should have a clock signal
-	output [31:0] readData      // Output of Memory Address Contents
+	output reg [31:0] read_data      // Output of Memory Address Contents
+	);
+	
+	reg [31:0] MEMO[0:1023];  // 256 words of 32-bit memory
+
+	integer i;
+	integer file;
+	initial 
+	begin
+	file = $fopen("E:\memoryyy.txt");
+	 // read_data <= 0;
+	//  for (i = 0; i < 1024; i = i + 1) begin
+		// MEMO[i] = 0;
+		 //$fmonitor(file,"@%h\n%b",i,MEMO[i]);
+//	  end
+	end
+	
+	always @(posedge clk)
+	begin
+		if (memwrite == 1'b1)
+			begin
+				MEMO[addr] <= write_data;
+			end
+		if (memread == 1'b1)
+			begin
+				read_data <= MEMO[addr];
+				$fmonitor(file,"@%h\n%b",addr,MEMO[addr]);
+				$display("%b @%h",MEMO[addr],addr);
+			end
+	end
+	endmodule
+	/*module data_memory (
+	input [31:0] addr,          // Memory Address
+	input [31:0] write_data,    // Memory Address Contents
+	input memwrite, memread,
+	input  clk,                  // All synchronous elements, including memories, should have a clock signal
+	output [31:0] read_data      // Output of Memory Address Contents
 	);
 	
 	reg [31:0] ram [0:1023];  // 256 words of 32-bit memory
@@ -40,8 +76,8 @@
 	//end
 	always @(posedge clk) 
 	begin
-	  if (memWrite)
-		 ram[ramAddress] <= writeData;
+	  if (memwrite)
+		 ram[addr] <= write_data;
 	end
-	assign readData = (memRead == 1'b1) ? ram[ramAddress]:16'd0;
-	endmodule
+	assign read_data = (memread == 1'b1) ? ram[addr]:16'd0;
+	endmodule*/
