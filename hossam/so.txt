@@ -1,0 +1,5 @@
+add $t0, $s2, $s3
+add $t1, $s4, $s5
+sub $s1, $t0, $t1
+add $s0, $s1, $zero
+sw $s0, 4($s5)

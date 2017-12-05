@@ -1,0 +1,9 @@
+lw $t0, 28($s0)
+lw $t1, 4($s0)
+slt $t3, $t0, $t1,
+addi $t5, $zero, 1
+beq $t3, $t5, else
+add $t6, $t2, $t1
+j exit
+else: sub $t6, $t2, $t1
+exit: sw $t6, 4($s0)

@@ -1,0 +1,11 @@
+add $t0, $s5, $zero
+lw $t1, 4($s5)
+sll $t1, $t1, 2
+add $t1, $t1, $s5
+ori $t2, $zero, 256
+top: slt $t3, $t0, $t1
+beq $t3, $zero, done
+sw $t2, 28($t0)
+addi $t0, $t0, 4
+j top
+done: add $t0, $s5, $zero

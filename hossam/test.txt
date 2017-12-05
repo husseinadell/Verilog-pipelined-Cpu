@@ -1,0 +1,24 @@
+addi $s1, $zero, 5
+add $s3, $s1, $s2
+Loop: sll $t1, $s3, 2
+add $t1, $t1, $s6
+lw $t0, 0($t1)
+bne $t0, $s5, Exit
+add $s3, $s3, $s4
+j Loop
+Exit: add $s3, $s3, $s4
+bne $s0, $t0, Loop
+add $t0, $s0, $s1
+sub $t0, $s0, $s1
+addi $t0, $s0, 540
+and $t0, $s0, $s1
+Label: andi $t0, $s0, 14
+or $t0, $s0, $s1
+ori $t0, $s0, 142
+beq $s0, $t0, shit
+nor $t0, $s0, $s1
+slt $t0, $s0, $s1
+shit: slti $t0, $s0, 7 
+sll $t0, $s1, 2 
+lw $t0, 28($s0)
+sw $t0, 4($s0)

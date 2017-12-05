@@ -1,0 +1,8 @@
+add $s2, $s0, $s0
+addi $t1, $s0, 5
+addi $t2, $s0, 3
+outer: addi $s2, $s2, 1 
+add $s1, $s0, $s0
+inner: addi $s1, $s1, 1
+bne $s1, $t1, inner
+bne $s2, $t2, outer

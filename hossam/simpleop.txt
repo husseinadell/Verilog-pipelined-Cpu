@@ -1,0 +1,8 @@
+lw $t0, 0($s5)
+lw $t1, 4($s5)
+slt $t1, $t0, $t1
+beq $t1, $zero, skip
+sll $t0, $t0, 2
+add $t0, $t0, $s5
+sw $zero, 28($t0)
+skip: add $t1, $zero, $zero
